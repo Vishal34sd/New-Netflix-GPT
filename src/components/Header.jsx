@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className="relative h-48 w-full bg-gradient-to-b via- to-transparent">
+    <div className="relative h-36 w-full bg-gradient-to-b from-black to-transparent">
     
       <img
         src="/netflix_logo-new.png" 

@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import { useState, useRef } from 'react';
 import { isValidateForm } from '../utils/validateForm';
 
-const LoginPage = () => {
+const Login = () => {
 
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMsg, setErrorMsg] = useState(null);
@@ -65,4 +65,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;
