@@ -11,11 +11,11 @@ const MainContainer = () => {
      const {original_title , overview , id} = mainMovie;
      console.log(mainMovie)
   return (
-    <div className="relative w-screen h-screen overflow-hidden">
-      <VideoBackground movieId={id}/>
-      <VideoTitle title={ original_title} overview = {overview}/>
-      
-    </div>
+   <div className="relative w-screen h-screen overflow-hidden">
+  <VideoBackground movieId={id}/>
+  <VideoTitle title={ original_title} overview = {overview}/>
+</div>
+
   )
 }
 

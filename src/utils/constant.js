@@ -6,3 +6,5 @@ export const API_OPTIONS = {
   }
 };
 export const  MOVIE_API='https://api.themoviedb.org/3/movie/now_playing?page=1'
+
+export const MOVIE_IMG_URL= "https://image.tmdb.org/t/p/w500"

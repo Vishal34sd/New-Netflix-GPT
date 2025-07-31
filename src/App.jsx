@@ -6,7 +6,7 @@ function App() {
   
 
   return (
-   <div>
+   <div className='p-0 m-0 box-border'>
     <LoginPage/>
    </div>
   )

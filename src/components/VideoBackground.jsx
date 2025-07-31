@@ -18,7 +18,7 @@ const VideoBackground = ({ movieId }) => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
+    <div className=" top-0 left-0 w-full h-full -z-10 overflow-hidden">
       {ytKey && (
         <iframe
           className="w-[100vw] h-[56.25vw] min-h-screen absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
