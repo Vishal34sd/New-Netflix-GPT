@@ -10,7 +10,6 @@ const dispatch = useDispatch();
 const getPopularMovies = async () => {
     const res = await fetch(POPULAR_MOVIE_API, API_OPTIONS);
     const json = await res.json();
-    console.log(json);
     dispatch(addPopularMovies(json.results));
 }
 

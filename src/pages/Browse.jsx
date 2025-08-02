@@ -6,6 +6,7 @@ import SecondaryContainer from '../components/SecondaryContainer'
 import usePopularMovies  from '../hooks/usePopularMovies'
 import useTopRatedMovies from '../hooks/useTopRatedMovies'
 import useUpcomingMovies from '../hooks/useUpcomingMovies'
+import useSeachMoviesData from '../hooks/useSearchMoviesData'
 
 const Browse = () => {
     useNowPlayingMovies();
@@ -13,9 +14,11 @@ const Browse = () => {
     useTopRatedMovies();
     useUpcomingMovies();
 
+    useSeachMoviesData();
+
   return (
     <div className="relative ">
-      <Header/>
+      <Header showSearch={true}/>
       <MainContainer/>
       <SecondaryContainer/>
     </div>

@@ -30,7 +30,7 @@ const Login = () => {
         className="w-full h-full object-cover absolute top-0 left-0 z-0"
       />
       <div className="relative z-10">
-        <Header />
+        <Header  showSearch={false}/>
       </div>
       <form onSubmit={submitHandler} className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/90 p-8 rounded-lg flex flex-col gap-4 w-80 shadow-lg text-white">
         {isSignInForm ? <h2 className="text-white text-2xl font-bold mb-4 text-center">Sign In</h2> :
