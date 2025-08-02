@@ -6,15 +6,15 @@ const SearchMovieCard = ({ data }) => {
   const imageUrl = poster_path ? `${MOVIE_IMG_URL}${poster_path}` : null;
 
   return (
-    <div className="w-32 h-48 text-white bg-black border border-gray-700 rounded ml-4">
+    <div className="w-52 h-80 text-white bg-black border border-gray-700 rounded overflow-hidden ">
       {imageUrl ? (
         <img
           src={imageUrl}
           alt={title}
-          className="w-full h-full object-cover rounded "
+          className="w-full h-full object-cover "
         />
       ) : (
-        <div className="w-full h-full flex items-center justify-center bg-gray-700 text-xs text-center rounded">
+        <div className="w-full h-full flex items-center justify-center bg-gray-700 text-xs text-center">
           No Image Available
         </div>
       )}
