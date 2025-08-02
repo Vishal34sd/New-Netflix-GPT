@@ -8,7 +8,7 @@ const searchMovieSlice = createSlice({
     },
     reducers : {
         addSearchData : (state, action )=>{
-            state.searchMovies = action.payload ;
+            state.searchMoviesData = action.payload ;
         }
     }
 });
