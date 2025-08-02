@@ -10,12 +10,10 @@ const SearchPage = () => {
   return (
     <div className="min-h-screen bg-black text-black">
       <Header showSearch={true} />
-      <div className="p-4 flex flex-wrap justify-center gap-4">
-        <h1 className='text-white'>Based on your search , we found these results</h1>
+      <div className="p-4 flex flex-wrap justify-start gap-8 pt-24">
+        <h1 className='text-white w-full mb-8'>Based on your search, we found these results</h1>
         {filterData.map((item) => (
-          <div key={item.id} className="flex-shrink-0 w-36 sm:w-40 md:w-44 lg:w-48 mt-56">
-            <SearchMovieCard data={item} />
-          </div>
+          <SearchMovieCard key={item.id} data={item} />
         ))}
       </div>
     </div>
