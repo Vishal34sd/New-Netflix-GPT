@@ -5,18 +5,18 @@ import useSearchMoviesData from '../hooks/useSearchMoviesData';
 const Header = ({ showSearch = true }) => {
   const searchText = useRef("");
   const navigate = useNavigate();
-  const searchMovies = useSearchMoviesData(); // ✅ get function from hook
+  const searchMovies = useSearchMoviesData(); 
 
   const searchHandle = () => {
     const query = searchText.current?.value.trim();
-    console.log("Searching for:", query); // ✅ DEBUG HERE
+    console.log("Searching for:", query); 
 
     if (!query || query.toLowerCase() === "undefined") {
       alert("Please enter a valid search term.");
       return;
     }
 
-    searchMovies(query);   // ✅ only called with user input
+    searchMovies(query);   
     navigate("/searchPage");
   };
 
@@ -33,7 +33,7 @@ const Header = ({ showSearch = true }) => {
             <input
               ref={searchText}
               type="text"
-              placeholder="Search for movies, shows..."
+              placeholder="Search for movies, web-series, shows..."
               className="bg-white w-200 h-12 text-2xl p-3 outline-none rounded-lg"
             />
             <button

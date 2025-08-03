@@ -6,7 +6,7 @@ const SearchMovieCard = ({ data }) => {
   const imageUrl = poster_path ? `${MOVIE_IMG_URL}${poster_path}` : null;
 
   return (
-    <div className="w-52 h-80 text-white bg-black border border-gray-700 rounded overflow-hidden ">
+    <div className="w-52 h-80 text-white bg-black border border-gray-700 rounded overflow-hidden  hover:scale-110">
       {imageUrl ? (
         <img
           src={imageUrl}
